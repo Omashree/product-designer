@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+* {
+    font-family: Poppins;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
