@@ -98,7 +98,7 @@ function App() {
       </main>
 
       {/* Testimonial Section */}
-      <section className="mt-25.75 bg-[url(background-image.png)] px-79.25 py-23.75 text-center">
+      <section className="mt-25.75 bg-[url(/background-image.png)] px-79.25 py-23.75 text-center">
         <blockquote>
           <h3 className="text-5xl font-semibold mb-10" >Kaleb Lechtenberg</h3>
           <p className="text-[38px] font-medium mb-10">
