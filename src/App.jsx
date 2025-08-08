@@ -12,7 +12,7 @@ function App() {
       <header className="pt-12.5 pb-7.5 px-25 md:px-8 lg:px-16">
         <nav className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex space-x-1.25 items-center">
-            <img src="src/assets/logo.png" alt="logo" className="h-[26.67px] w-[26.62px]" />
+            <img src="logo.png" alt="logo" className="h-[26.67px] w-[26.62px]" />
             <a href="#" className="text-xl font-bold">Web</a>
           </div>
           <div className="flex space-x-7.5 font-normal text-lg">
@@ -40,23 +40,23 @@ function App() {
               </h2>
             </div>
             <div className="flex w-[525px] justify-between justify-self-center self-center mt-4">
-              <SocialIcon src="src/assets/Instagram.svg" label="Facebook" />
-              <SocialIcon src="src/assets/Figma.svg" label="Figma" />
-              <SocialIcon src="src/assets/LinkedIn.svg" label="LinkedIn" />
-              <SocialIcon src="src/assets/Twitter.svg" label="Twitter" />
-              <SocialIcon src="src/assets/Telegram.svg" label="Telegram" />
-              <SocialIcon src="src/assets/Medium.svg" label="Medium" />
+              <SocialIcon src="Instagram.svg" label="Facebook" />
+              <SocialIcon src="Figma.svg" label="Figma" />
+              <SocialIcon src="LinkedIn.svg" label="LinkedIn" />
+              <SocialIcon src="Twitter.svg" label="Twitter" />
+              <SocialIcon src="Telegram.svg" label="Telegram" />
+              <SocialIcon src="Medium.svg" label="Medium" />
             </div>
             <div className="flex justify-center space-x-2 items-center h-13 w-218.75 bg-[#292929]">
-              <span>Download Curriculum Vitae</span><img src="src/assets/arrow-down.svg" alt="arrow-down" />
+              <span>Download Curriculum Vitae</span><img src="arrow-down.svg" alt="arrow-down" />
             </div>
           </div>
           <div className="lg:w-1/2 flex justify-center lg:justify-end pt-6">
             <img
-              src="src/assets/graphic-design.jpg"
+              src="graphic-design.jpg"
               alt="Graphic Design"
               className="rounded-[10px] w-[561px] h-[646px] object-cover"
-              onError={(e) => { e.target.onerror = null; e.target.src="src/assets/graphic-design.jpg"; }}
+              onError={(e) => { e.target.onerror = null; e.target.src="graphic-design.jpg"; }}
             />
           </div>
         </section>
@@ -64,9 +64,9 @@ function App() {
         {/* Stats Section */}
         <section className="mt-25.75 py-20.5 px-25 h-88 flex justify-between gap-10 bg-[#0B0B0B] border border-[#646464] rounded-[29px]">
           <StatCard value="90%" description="Job Success Score on Upwork" />
-          <img src="src/assets/Dawn.svg" alt="Dawn" className="size-20 self-center" />
+          <img src="Dawn.svg" alt="Dawn" className="size-20 self-center" />
           <StatCard value=">25.000" description="Duplicates on Figma Community" />
-          <img src="src/assets/Dawn.svg" alt="Dawn" className="size-20 self-center" />
+          <img src="Dawn.svg" alt="Dawn" className="size-20 self-center" />
           <StatCard value=">2K" description="In Finished Works" />
         </section>
 
@@ -74,14 +74,14 @@ function App() {
         <section className="mt-25.75">
           <h2 className="text-[52px] font-bold mb-6">PORTFOLIO</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="src/assets/product-image.jpg" />
-            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="src/assets/product-image.jpg" />
-            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="src/assets/product-image.jpg" />
-            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="src/assets/product-image.jpg" />
-            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="src/assets/product-image.jpg" />
-            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="src/assets/product-image.jpg" />
-            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="src/assets/product-image.jpg" />
-            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="src/assets/product-image.jpg" />
+            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="product-image.jpg" />
+            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="product-image.jpg" />
+            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="product-image.jpg" />
+            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="product-image.jpg" />
+            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="product-image.jpg" />
+            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="product-image.jpg" />
+            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="product-image.jpg" />
+            <PortfolioCard title="Chaintech Product" category="UX Design, Angular, JavaScript" imageUrl="product-image.jpg" />
           </div>
         </section>
 
@@ -98,30 +98,30 @@ function App() {
       </main>
 
       {/* Testimonial Section */}
-      <section className="mt-25.75 bg-[url(src/assets/background-image.png)] px-79.25 py-23.75 text-center relative">
+      <section className="mt-25.75 bg-[url(background-image.png)] px-79.25 py-23.75 text-center relative">
         <blockquote>
           <h3 className="text-5xl font-semibold mb-10" >Kaleb Lechtenberg</h3>
           <p className="text-[38px] font-medium mb-10">
             &ldquo;Working with this freelancer has been great. His attention to detail is unparalleled and finished all work ahead of schedule. Will gladly send more work and I do not hesitate to recommend him to you on your project also.&rdquo;
           </p>
-          <img src="src/assets/Shield.svg" alt="Shield" className='m-auto' />
+          <img src="Shield.svg" alt="Shield" className='m-auto' />
         </blockquote>
       </section>
 
       {/* Thanks Section */}
       <section className="mx-24.5 mt-60 bg-[#A87FF3] rounded-[15px] flex flex ">
-        <img src="src/assets/Frame-1.png" alt="Frame 1" className="absolute transform translate-y-12" />
-        <img src="src/assets/graphic-design.jpg" alt="Graphic Design" className="h-67.75 w-58 rounded-[10px] absolute transform translate-10 -translate-y-35" />
+        <img src="Frame-1.png" alt="Frame 1" className="absolute transform translate-y-12" />
+        <img src="graphic-design.jpg" alt="Graphic Design" className="h-67.75 w-58 rounded-[10px] absolute transform translate-10 -translate-y-35" />
         <h5 className="pl-74.5 py-17 text-lg">
           Thanks for visit my website <br />If you have any questions you can write me to any of my social networks, I am sure I will answer you.
         </h5>
-        <img src="src/assets/Frame-2.png" alt="Frame 2" className="absolute transform translate-x-294" />
+        <img src="Frame-2.png" alt="Frame 2" className="absolute transform translate-x-294" />
       </section>
 
       <footer className="pb-5 px-4 md:px-8 lg:px-24.5 mt-20 border-b-1 border-[#E6E6E6]">
         <nav className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex space-x-1.25 items-center md:mb-0">
-            <img src="src/assets/logo.png" alt="logo" className="size-15 mr-3" />
+            <img src="logo.png" alt="logo" className="size-15 mr-3" />
             <a href="#" className="text-[45px] font-bold">Web</a>
           </div>
           <div className="flex space-x-7.5 text-lg">

@@ -8,7 +8,7 @@ const PortfolioCard = ({ title, category, imageUrl }) => {
           src={imageUrl}
           alt={`Preview of ${title}`}
           className="w-full h-50 mb-7 rounded-[10px] object-cover group-hover:scale-105 transition-transform duration-300"
-          onError={(e) => { e.target.onerror = null; e.target.src="src/assets/product-image.jpg"; }}
+          onError={(e) => { e.target.onerror = null; e.target.src="product-image.jpg"; }}
       />
       <h4 className="text-2xl font-bold mb-7">{title}</h4>
       <div className="flex gap-1.25 mb-7">
