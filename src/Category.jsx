@@ -1,7 +1,7 @@
 const Category = ({ value }) => {
   return (
     <button
-      className="px-2 py-1 text-sm text-[#784DC7] bg-[#E9DFFC] border border-[#BE9FF6] rounded-xl"
+      className="px-2 py-1 text-sm md:text-[13px] lg:text-sm text-[#784DC7] bg-[#E9DFFC] border border-[#BE9FF6] rounded-xl"
     >
       {value}
     </button>
