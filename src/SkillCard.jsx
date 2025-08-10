@@ -1,13 +1,39 @@
+import { useState, useEffect } from 'react';
+
 const SkillCard = ({ skillName, percentage }) => {
+  const [width, setWidth] = useState(2);
+
+  useEffect(() => {
+
+    const handleResize = () => {
+      if (window.matchMedia('(min-width: 1280px)').matches) {
+        setWidth(2); 
+      } else if (window.matchMedia('(min-width: 1024px)').matches) {
+        setWidth(3);
+      } else if (window.matchMedia('(min-width: 768px)').matches) {
+        setWidth(3.5);
+      } else if (window.matchMedia('(min-width: 425px)').matches) {
+        setWidth(6);
+      } else {
+        setWidth(8);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const radius = 78;
-  const width = 2.5;
   const circumference = 2 * Math.PI * radius;
-  const strokeDashoffset = 30 - circumference - (percentage / 100) * circumference;
+  const strokeDashoffset = 36 - circumference - (percentage / 100) * circumference;
 
   return (
-    <div className="flex flex-col md:flex-row items-center h-95 md:h-66 lg:h-110 xl:h-80 bg-[#010101] border border-[#737373] rounded-[10px] pt-5 md:pt-8 lg:pt-10 pr-12.5 md:pr-10 lg:pr-12.5 pb-7.5 md:pb-12 lg:pb-15 pl-10 md:pl-8 lg:pl-10">
-      <div className="relative w-[40vw] h-[25vh] md:w-[90vw] md:h-[26vh] lg:w-[200vw] lg:h-[200vh] xl:w-[55vw] xl:h-[55vh]">
-        <svg className="w-full h-full transform rotate-160">  
+    <div className="flex flex-col md:flex-row items-center h-108 xs:h-100 md:h-66 lg:h-110 xl:h-80 bg-[#010101] border border-[#737373] rounded-[10px] pt-5 md:pt-8 lg:pt-10 pr-8 xs:pr-12.5 md:pr-10 lg:pr-12.5 pb-7.5 md:pb-12 lg:pb-15 pl-8 xs:pl-10 md:pl-8 lg:pl-10">
+      <div className="relative w-[60vw] xs:w-[44vw] h-[30vh] md:w-[90vw] md:h-[30vh] lg:w-[210vw] lg:h-[36vh] xl:w-[86vw] 2xl:w-[55vw] xl:h-[55vh]">
+        <svg className="w-full h-full transform rotate-150">  
           <defs>
         <linearGradient id="gradient-main" x1="100%" y1="0%" x2="0%" y2="0%">
           <stop offset="0%" stopColor="#FA709A" />

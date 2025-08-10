@@ -9,40 +9,40 @@ function App() {
     <>
       <div className="bg-black text-white font-regular">
 
-      <header className="pt-7.5 md:pt-12.5 pb-7.5 px-5.5 md:px-8 lg:px-16">
+      <header className="pt-4.25 xs:pt-7.5 md:pt-12.5 pb-7.5 px-4 xs:px-5.5 md:px-8 lg:px-16">
         <nav className="flex justify-between items-center">
           <div className="flex space-x-1.25 items-center">
             <img src="logo.png" alt="logo" className="h-[26.67px] w-[26.62px]" />
             <a href="#" className="text-xl font-bold">Web</a>
-          </div>
+          </div >
           <div className="flex space-x-7.5 font-normal md:text-base lg:text-lg hidden md:block">
             <a href="#">Home</a>
             <a href="#">Portfolio</a>
             <a href="#">Skills</a>
             <a href="#">About Me</a>
           </div>
-          <div>
-            <button className="py-3 px-6 font-normal text-base rounded-sm bg-[#925FF0] hidden md:block ">Contact Me</button>
+          <div className="hidden md:block">
+            <button className="py-3 px-6 font-normal text-base rounded-sm bg-[#925FF0] hover:bg-[#b38ff5] hover:cursor-pointer transition duration-700 ">Contact Me</button>
           </div>
-          <div>
-            <img src="menu.png" alt="Menu" className="block md:hidden" />
+          <div className="block md:hidden">
+            <img src="menu.png" alt="Menu" />
           </div>
         </nav>
       </header>
 
-      <main className="px-7 md:px-8 lg:px-16 pt-4.25 md:pt-8 lg:pt-12.5">
+      <main className="px-4 xs:px-7 md:px-8 lg:px-16 xs:pt-4.25 md:pt-8 lg:pt-12.5">
 
         <section className="flex flex-col xl:gap-10 xl:flex-row justify-between">
-          <div className="xl:w-239 h-96 md:h-140 lg:h-167 flex flex-col justify-between">
+          <div className="xl:w-239 h-76 xs:h-96 md:h-140 lg:h-167 flex flex-col justify-between">
             <div className="text-center">
-              <h1 className="text-[78.79px] md:text-[136px] lg:text-[176px] h-35.5 md:h-61 lg:h-84.5 font-extrabold leading-[90%] mb-6 md:mb-10 lg:mb-4.5">
+              <h1 className="text-[56px] xs:text-[78.79px] md:text-[136px] lg:text-[176px] h-25 xs:h-35.5 md:h-61 lg:h-84.5 font-extrabold leading-[90%] mb-6 md:mb-10 lg:mb-4.5">
                 PRODUCT <br /> DESIGNER
               </h1>
-              <h2 className="text-[45.77px] md:text-[79px] lg:text-[100px] font-bold leading-[90%] bg-gradient-to-r from-[#FA709A] to-[#FEE140] bg-clip-text text-transparent">
+              <h2 className="text-3xl xs:text-[42px] md:text-[79px] lg:text-[100px] font-bold leading-[90%] bg-gradient-to-r from-[#FA709A] to-[#FEE140] bg-clip-text text-transparent">
                 CRISTIAN MUNOZ
               </h2>
             </div>
-            <div className="flex w-[304.16px] md:w-[525px] justify-between justify-self-center self-center md:mt-4">
+            <div className="flex w-[260px] xs:w-[304.16px] md:w-[525px] justify-between justify-self-center self-center md:mt-4">
               <SocialIcon src="Instagram.svg" label="Facebook" />
               <SocialIcon src="Figma.svg" label="Figma" />
               <SocialIcon src="LinkedIn.svg" label="LinkedIn" />
@@ -50,7 +50,7 @@ function App() {
               <SocialIcon src="Telegram.svg" label="Telegram" />
               <SocialIcon src="Medium.svg" label="Medium" />
             </div>
-            <div className="flex justify-center text-sm md:text-lg space-x-2 items-center h-9.5 md:h-15.25 lg:h-13 w-full xl:w-218.75 bg-[#292929]">
+            <div className="flex justify-center text-sm md:text-lg space-x-2 items-center h-9.5 md:h-15.25 lg:h-13 w-full xl:w-218.75 bg-[#292929] hover:bg-[#696969] hover:cursor-pointer transition duration-700">
               <span>Download Curriculum Vitae</span><img src="arrow-down.svg" alt="arrow-down" className="size-3 md:size-5" />
             </div>
           </div>
@@ -65,7 +65,7 @@ function App() {
         </section>
 
         {/* Stats Section */}
-        <section className="mt-10 md:mt-22 lg:mt-25.75 px-12.5 md:px-[43.27px] lg:px-12 py-20.5 md:py-[70.97px] lg:py-10 xl:py-20.5 xl:px-25 h-150 md:h-62 lg:h-50 xl:h-88 flex flex-col md:flex-row justify-between gap-10 bg-[#0B0B0B] border border-[#646464] rounded-[29px] md:rounded-[25.1px] lg:rounded-[29px]">
+        <section className="mt-10 md:mt-22 lg:mt-25.75 px-8 xs:px-12.5 md:px-[43.27px] lg:px-12 py-16 xs:py-20.5 md:py-[70.97px] lg:py-10 xl:py-20.5 xl:px-25 h-130 xs:h-150 md:h-62 lg:h-50 xl:h-88 flex flex-col md:flex-row justify-between gap-10 bg-[#0B0B0B] border border-[#646464] rounded-[29px] md:rounded-[25.1px] lg:rounded-[29px]">
           <StatCard value="90%" description="Job Success Score on Upwork" />
           <img src="Dawn.svg" alt="Dawn" className="lg:size-15 xl:size-20 self-center lg:block hidden" />
           <StatCard value=">25.000" description="Duplicates on Figma Community" />
@@ -101,7 +101,7 @@ function App() {
       </main>
 
       {/* Testimonial Section */}
-      <section className="mt-10 md:mt-17 lg:mt-25.75 bg-[url(/background-image.png)] px-20 lg:px-30 xl:px-79.25 py-15 md:py-10 lg:py-23.75 text-center">
+      <section className="mt-10 md:mt-17 lg:mt-25.75 bg-[url(/background-image.png)] px-10 xs:px-20 lg:px-30 xl:px-79.25 py-10 xs:py-15 md:py-10 lg:py-23.75 text-center">
         <blockquote>
           <h3 className="text-[26px] md:text-4xl lg:text-5xl font-semibold mb-10" >Kaleb Lechtenberg</h3>
           <p className="text-base lg:text-[38px] md:font-normal lg:font-medium mb-10">
@@ -112,22 +112,22 @@ function App() {
       </section>
 
       {/* Thanks Section */}
-      <section className="mx-7 md:mx-8 lg:mx-24.5 mt-20 md:mt-30 lg:mt-60 bg-[#A87FF3] rounded-[15px] flex flex ">
-        <img src="Frame-1.png" alt="Frame 1" className="h-[57.75px] md:h-[107.36px] lg:h-[125px] absolute transform translate-y-11 md:translate-y-13 lg:translate-y-16 xl:translate-y-12" />
-        <img src="graphic-design.jpg" alt="Graphic Design" className="object-cover h-[103.03px] md:h-48 lg:h-67.75 w-22 md:w-41 lg:w-58 rounded-[10px] absolute transform translate-5 -translate-y-10 md:translate-9 lg:translate-10 md:-translate-y-17 lg:-translate-y-35" />
-        <h5 className="pl-32.5 md:pl-60 pr-5 md:pr-12 lg:pl-74.5 py-4.25 md:py-14 lg:py-17 text-sm md:text-base lg:text-lg">
+      <section className="mx-4 xs:mx-7 md:mx-8 lg:mx-24.5 mt-20 md:mt-30 lg:mt-60 bg-[#A87FF3] rounded-[15px] flex">
+        <img src="Frame-1.png" alt="Frame 1" className="h-[57.75px] md:h-[107.36px] lg:h-[125px] self-end" />
+        <img src="graphic-design.jpg" alt="Graphic Design" className="object-cover h-[103.03px] md:h-48 lg:h-67.75 w-22 md:w-41 lg:w-58 rounded-[10px] absolute transform translate-x-5 -translate-y-10 md:translate-x-9 lg:translate-x-10 md:-translate-y-17 lg:-translate-y-35" />
+        <h5 className="pl-15 md:pl-25 lg:pl-40 py-4.25 md:py-14 lg:py-17 -mr-7 text-sm md:text-base lg:text-lg">
           Thanks for visit my website <br />If you have any questions you can write me to any of my social networks, I am sure I will answer you.
         </h5>
-        <img src="Frame-2.png" alt="Frame 2" className="h-[45.74px] md:h-[85.03px] lg:h-[125px] absolute transform translate-x-78 md:translate-x-150 lg:translate-x-170 xl:translate-x-294" />
+        <img src="Frame-2.png" alt="Frame 2" className="h-[45.74px] md:h-[85.03px] lg:h-[125px]" />
       </section>
 
       <footer className="pb-7.5 md:pb-5 px-5.5 md:px-4 md:px-8 lg:px-24.5 mt-10 md:mt-13 lg:mt-20 border-b-1 border-[#E6E6E6]">
         <nav className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex space-x-1.25 items-center mb-5 md:mb-0">
-            <img src="logo.png" alt="logo" className="size-11.25 md:size-12 lg:size-15 mr-3" />
-            <a href="#" className="text-[33.75px] md:text-4xl lg:text-[45px] font-bold">Web</a>
+            <img src="logo.png" alt="logo" className="size-10 xs:size-11.25 md:size-12 lg:size-15 mr-3" />
+            <a href="#" className="text-3xl xs:text-[33.75px] md:text-4xl lg:text-[45px] font-bold">Web</a>
           </div>
-          <div className="flex space-x-7.5 text-base lg:text-lg">
+          <div className="flex space-x-4 xs:space-x-7.5 text-sm xs:text-base lg:text-lg">
             <a href="#">Home</a>
             <a href="#">Portfolio</a>
             <a href="#">Skills</a>

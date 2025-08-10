@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-xs: 425px;
+}
+
 * {
     font-family: Poppins;
     line-height: 100%;
