@@ -1,12 +1,104 @@
-# React + Vite
+# 🚀 Cristian Munoz - Product Designer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the portfolio website of Cristian Munoz, a dedicated Product Designer passionate about crafting visually stunning and user-friendly digital experiences. This repository contains the code for the website, converted from a Figma design into a responsive React.js application.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+You can check out the live version of the application here:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 [Live Demo of Store Rating System](https://product-designer-cristian.netlify.app)
+
+---
+
+## ✨ Features
+
+* **Modern Design**: A sleek and professional design that highlights key information and projects.
+
+* **Responsive Layout**: Optimized for various devices, from mobile phones to large desktop screens, ensuring a seamless user experience.
+
+* **Portfolio Showcase**: Dedicated section to display design projects with titles and categories.
+
+* **Skill Overview**: Visual representation of design skills with percentage indicators.
+
+* **Client Testimonials**: A section to feature feedback from satisfied clients.
+
+* **Semantic HTML**: Structured with <header>, <main>, <section>, <footer> for better accessibility and SEO.
+
+* **Reusable Components**: Built with React components for maintainability and scalability (e.g., Buttons, Cards, Skill Indicators).
+
+* **Accessibility Focused**: Includes alt tags for images.
+
+---
+
+## 📸 Screenshots
+Here are some screenshots of the deployed application to give you a visual overview:
+
+![image-1](assets/image-1.png)
+
+![image-2](assets/image-2.png)
+
+![image-3](assets/image-3.png)
+
+![image-4](assets/image-4.png)
+
+![image-5](assets/image-5.png)
+
+![image-6](assets/image-6.png)
+
+---
+
+## 🛠️ Technologies Used
+
+* **React.js**: A JavaScript library for building user interfaces.
+
+* **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+
+* **Google Fonts (Poppins)**: For modern and clean typography.
+
+---
+
+## 🚀 Getting Started
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+Node.js (LTS version recommended)
+
+```bash
+npm
+```
+
+### Installation
+
+📝 Clone the repository:
+
+```bash
+git clone https://github.com/Omashree/product-designer.git
+```
+
+📂 Navigate to the project directory:
+
+```bash
+cd product-designer
+```
+
+📦 Install dependencies:
+
+```bash
+npm install
+```
+
+▶️ Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will typically open in your browser at [http://localhost:5173](http://localhost:5173).
+
+---
+
+## 📄 License
+Distributed under the MIT License. See LICENSE for more information.
