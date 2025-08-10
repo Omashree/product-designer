@@ -24,7 +24,7 @@ You can check out the live version of the application here:
 
 * **Client Testimonials**: A section to feature feedback from satisfied clients.
 
-* **Semantic HTML**: Structured with <header>, <main>, <section>, <footer> for better accessibility and SEO.
+* **Semantic HTML**: Structured with ```<header>```, ```<main>```, ```<section>```, ```<footer>``` for better accessibility and SEO.
 
 * **Reusable Components**: Built with React components for maintainability and scalability (e.g., Buttons, Cards, Skill Indicators).
 
@@ -35,17 +35,17 @@ You can check out the live version of the application here:
 ## 📸 Screenshots
 Here are some screenshots of the deployed application to give you a visual overview:
 
-![image-1](assets/image-1.png)
+![image-1](src/assets/image-1.png)
 
-![image-2](assets/image-2.png)
+![image-2](src/assets/image-2.png)
 
-![image-3](assets/image-3.png)
+![image-3](src/assets/image-3.png)
 
-![image-4](assets/image-4.png)
+![image-4](src/assets/image-4.png)
 
-![image-5](assets/image-5.png)
+![image-5](src/assets/image-5.png)
 
-![image-6](assets/image-6.png)
+![image-6](src/assets/image-6.png)
 
 ---
 
